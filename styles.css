@@ -1,0 +1,768 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color:rgba(0, 0, 0, .5);
+    border-radius: 4px;
+}
+
+#main {
+    width: 100%;
+    /* height: 450vh; */
+    background-color: #F3EEE8;
+    border-top: 1px solid transparent;
+    position: relative;
+}
+
+#topNav {
+    width: 100%;
+    height: 14%;
+    /* background-color: #F3EEE8; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    /* margin-top: 1%; */
+    position: fixed;
+    top: 0%;
+    /* visibility: hidden; */
+    z-index: 99999;
+}
+
+#topNav h2 {
+    font-family: "Voyage";
+    font-size: 45px;
+    font-weight: 100;
+    line-height: 27px;
+    text-align: center;
+}
+
+#topNav>i {
+    font-size: 60px;
+    transition: all cubic-bezier(0.23, 1, 0.320, 1) 1s;
+}
+
+#topNav i:hover {
+    transform: rotate(-180deg);
+}
+
+#topNav img {
+    width: 40px;
+    transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 1s;
+}
+
+#topNav img:hover {
+    transform: rotate(360deg);
+}
+
+#div2 {
+    width: 100%;
+    height: 170vh;
+    background-color: #F3EEE8;
+    margin-top: 12%;
+    position: relative;
+}
+
+#div2 h1 {
+    font-family: "Voyage";
+    font-size: 610px;
+    color: #f8c1ca;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#div2 img {
+    width: 65%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#div2 :nth-child(3) {
+    font-family: "Ogg";
+    font-size: 45px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#div2Img {
+    height: 80px;
+    margin-top: 65%;
+}
+
+#div3 {
+    width: 100%;
+    height: 1350px;
+    background-color:#e3dacd;
+    position: relative;
+}
+
+#div3Nuni {
+    width: 24%;
+    height: 5%;
+    background-color: #E3DACD;
+    position: absolute;
+    top: -2.5%;
+    left: 40%;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ogg";
+}
+
+#div3 h2 {
+    position: absolute;
+    top: 17%;
+    left: 29%;
+    text-align: center;
+    font-size: 65px;
+    font-family: "Ogg";
+    font-weight: 100;
+    line-height: 75px;
+}
+
+#div3>h1 {
+    position: absolute;
+    top: 48%;
+    left: 17%;
+    font-family: "Ogg";
+    text-align: center;
+    font-size: 190px;
+    font-weight: 100;
+    line-height: 85%;
+}
+
+#div3 :nth-child(4) {
+
+    position: absolute;
+    top: 58%;
+    left: 28%;
+    width: 45%;
+    height: 40%;
+}
+
+
+#div3 :nth-child(5) {
+    position: absolute;
+    top: 97%;
+    left: 40%;
+    width: 24%;
+    height: 5%;
+    background-color: #F3EEE8;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Ogg";
+}
+
+.badaCapsule {
+    width: 100%;
+    height: 1500px;
+    background-color: #F3EEE8;
+    margin-top: 12%;
+    position: relative;
+}
+
+.chotaCapsule {
+    width: 100%;
+    height: 1800px;
+    background-color: #FFE699;
+    position: absolute;
+    top: 20%;
+    border-top-left-radius: 100vh;
+    border-top-right-radius: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle{
+    width: 55%;
+    height: 1000px;
+    /* background-color: chartreuse; */
+    margin-top: -82%;
+    position: relative;
+}
+
+.cards {
+    width: 310px;
+    height: 410px;
+    /* background-color: blanchedalmond; */
+    /* margin-top: 10%; */
+}
+
+#card1 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* background-color: rgb(131, 150, 166); */
+    z-index: 9;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+
+.rectangle:hover #card1 {
+    transform: rotate(-18deg);
+}
+
+#card1 video {
+    /* width: 100%; */
+    height: 410px;
+}
+
+#card2 {
+    position: absolute;
+    top: 17%;
+    right: 24%;
+    /* background-color: rgb(16, 57, 93); */
+    transform: rotate(2deg);
+    border-radius: 10px;
+    background-image: url("1st");
+    background-size: cover;
+    background-position: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+
+.rectangle:hover #card2 {
+    transform: rotate(13deg);
+}
+
+#rect1 h5 {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    font-family: "Voyage";
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#rect1 h1 {
+    position: absolute;
+    bottom: 17%;
+    left: 18%;
+    font-family: "Voyage";
+    font-size: 125px;
+    font-weight: 100;
+}
+
+#rect1 p {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    font-family: "Ogg";
+    /* font-size: 125px; */
+    font-weight: 100;
+    text-align: center;
+    line-height: 20px;
+}
+
+#bigCapsule2{
+    margin-top: -30%;
+    background-color: transparent;
+}
+
+#smallCapsule2{
+    background-color:#ffffff;
+}
+#card3 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* background-color: rgb(131, 150, 166); */
+    z-index: 9;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+    background-image: url(3rd);
+    background-position: center;
+    background-size: cover;
+}
+.rectangle:hover #card3{
+    transform: rotate(-18deg);
+}
+
+#card4 {
+    position: absolute;
+    top: 17%;
+    right: 24%;
+    /* background-color: rgb(16, 57, 93); */
+    transform: rotate(2deg);
+    border-radius: 10px;
+    background-image: url("4th");
+    background-size: cover;
+    background-position: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+.rectangle:hover #card4{
+    transform: rotate(13deg);
+}
+#rect2 h5 {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    font-family: "Voyage";
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#rect2 h1 {
+    position: absolute;
+    bottom: 17%;
+    left: 34%;
+    font-family: "Voyage";
+    font-size: 125px;
+    font-weight: 100;
+}
+
+#rect2 p {
+    position: absolute;
+    bottom: 8%;
+    left: 32%;
+    font-family: "Ogg";
+    /* font-size: 125px; */
+    font-weight: 100;
+    text-align: center;
+    line-height: 20px;
+}
+#bigCapsule3{
+    margin-top: -30%;
+    background-color: transparent;
+}
+#smallCapsule3{
+    background-color: #f3eee8;
+}
+#card5 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* background-color: rgb(131, 150, 166); */
+    z-index: 9;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+#card5 video {
+    /* width: 100%; */
+    height: 410px;
+}
+.rectangle:hover #card5{
+    transform: rotate(-18deg);
+}
+
+#card6 {
+    position: absolute;
+    top: 17%;
+    right: 24%;
+    /* background-color: rgb(16, 57, 93); */
+    transform: rotate(2deg);
+    border-radius: 10px;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+#card6 video {
+    /* width: 100%; */
+    height: 410px;
+}
+.rectangle:hover #card6{
+    transform: rotate(13deg);
+}
+#rect3 h5 {
+    position: absolute;
+    bottom: 37%;
+    left: 50%;
+    font-family: "Voyage";
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#rect3 h1 {
+    position: absolute;
+    bottom: 14%;
+    left: 7%;
+    font-family: "Voyage";
+    text-align: center;
+    line-height: 100px;
+    font-size: 128px;
+    font-weight: 100;
+}
+
+#rect3 p {
+    position: absolute;
+    bottom: 1%;
+    left: 32%;
+    font-family: "Ogg";
+    text-align: center;
+    line-height: 20px;
+    font-weight: 100;
+}
+
+#bigCapsule4{
+    margin-top: -30%;
+    background-color: transparent;
+}
+
+#smallCapsule4{
+    background-color:#ffffff;
+}
+#card7 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* background-color: rgb(131, 150, 166); */
+    z-index: 9;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+    background-image: url(7th.webp);
+    background-position: center;
+    background-size: cover;
+}
+.rectangle:hover #card7{
+    transform: rotate(-18deg);
+}
+
+#card8 {
+    position: absolute;
+    top: 17%;
+    right: 24%;
+    /* background-color: rgb(16, 57, 93); */
+    transform: rotate(2deg);
+    border-radius: 10px;
+    background-image: url("8th.webp");
+    background-size: cover;
+    background-position: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+.rectangle:hover #card8{
+    transform: rotate(13deg);
+}
+#rect4 h5 {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    font-family: "Voyage";
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#rect4 h1 {
+    position: absolute;
+    bottom: 17%;
+    left: 34%;
+    font-family: "Voyage";
+    font-size: 125px;
+    font-weight: 100;
+}
+
+#rect4 p {
+    position: absolute;
+    bottom: 6%;
+    left: 28%;
+    font-family: "Ogg";
+    /* font-size: 125px; */
+    font-weight: 100;
+    text-align: center;
+    line-height: 20px;
+}
+
+#bigCapsule5{
+    margin-top: -30%;
+    background-color: transparent;
+}
+
+#smallCapsule5{
+    background-color: #f3eee8;
+}
+#card9 {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    /* background-color: rgb(131, 150, 166); */
+    z-index: 9;
+    transform: rotate(-8deg);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+    background-image: url(9th.webp);
+    background-position: center;
+    background-size: cover;
+}
+.rectangle:hover #card9{
+    transform: rotate(-18deg);
+}
+
+#card10 {
+    position: absolute;
+    top: 17%;
+    right: 24%;
+    /* background-color: rgb(16, 57, 93); */
+    transform: rotate(2deg);
+    border-radius: 10px;
+    background-image: url(10th.webp);
+    background-size: cover;
+    background-position: center;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+    transform-origin: bottom center;
+}
+.rectangle:hover #card10{
+    transform: rotate(13deg);
+}
+#rect5 h5 {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    font-family: "Voyage";
+    font-size: 22px;
+    font-weight: 100;
+}
+
+#rect5 h1 {
+    position: absolute;
+    bottom: 17%;
+    left: 17%;
+    font-family: "Voyage";
+    font-size: 125px;
+    font-weight: 100;
+}
+
+#rect5 p {
+    position: absolute;
+    bottom: 8%;
+    left: 32%;
+    font-family: "Ogg";
+    /* font-size: 125px; */
+    font-weight: 100;
+    text-align: center;
+    line-height: 20px;
+}
+
+#div4{
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    background-color:#ffe699;
+    top: 97%;
+}
+
+#div4 #one{
+    width: 100%;
+    height: 56px;
+    background-color: #e3dacd;
+    position: relative;
+}
+
+#div4 #one #two{
+    width: 25%;
+    height: 97%;
+    background-color: #e3dacd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -2%;
+    border-radius: 60px;
+    font-family: "ogg";
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div4 h1{
+    font-size: 180px;
+    font-family: "voyage";
+    font-weight: 80;
+    text-align: center;
+    margin-top: 17%;
+    line-height: 140px;
+    position: absolute;
+     margin-top: 14%;
+    left: 20%;
+    z-index: 9;
+    background-image: url(https://www.chungiyoo.com/img/bright.svg);
+}
+
+
+
+/* #{
+    width: 350px;
+    position: absolute;
+    top: 17%;
+    left: 32%; 
+    background-image: url(https://www.chungiyoo.com/img/bright.svg);
+
+} */
+
+#div4 img{
+    width: 270px;
+    position: absolute;
+    top: 33%;
+    left: 43%;
+}  
+
+
+#div4 #three{
+    font-size: 170px;
+    font-family: "voyage";
+    font-weight: 100;
+    text-align: center;
+    line-height: 140px;
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    z-index: 9;
+} 
+
+#lastDiv{
+    width: 100%;
+    height: 110vh;
+    background-color: #f6BAC6;
+    position: absolute;
+    top: 115%;
+
+}
+
+#lastDiv :nth-child(1){
+    font-family: "voyage";
+    font-weight: 900;
+    font-size: 110px;
+    position: absolute;
+    top: 42%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    color: #D73234;
+}
+
+#lastDiv :nth-child(2){
+    font-family: "voyage";
+    font-weight: 900;
+    font-size: 110px;
+    position: absolute;
+    top: 42%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: #D73234;
+}
+
+#lastDiv :nth-child(3){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 57%;
+    left: 42%;
+    color: #D73234;
+
+}
+
+#lastDiv :nth-child(4){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    top: 57%;
+    left: 52%;
+    color: #D73234;
+
+}
+#lastDiv :nth-child(5){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: 4px;
+    left: 2%;
+    color: #D73234;
+
+}
+#lastDiv :nth-child(6){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: 4px;
+    left: 7%;
+    color: #D73234;
+
+}
+#lastDiv :nth-child(7){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: 4px;
+    left: 12%;
+    color: #D73234;
+
+}
+
+#lastDiv :nth-child(8){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: 3px;
+    left: 22%;
+    color: #D73234;
+
+}
+
+#lastDiv :nth-child(9){
+    font-family: "ogg";
+    font-weight: 900;
+    font-size: 15px;
+    position: absolute;
+    bottom: 3px;
+    left: 82%;
+    color: #D73234;
+
+}
